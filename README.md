@@ -1,15 +1,18 @@
 ## TS_Class
 PHP Class Definition with defined named properties
-### Problem to solve
-Define a class allowwing to get instance properties values by name without ambiguity, avoiding property name hard coding  
-This may facilitate server/client transfers and more generally object communications  
+### Problem and solution
+* Regular OOP does not allow to access properties values by name without hard coding the name of the property (even with ArrayAccess interface in PHP).  
+* There seems to be a need of a new class definition allowing to get instance properties values by name without ambiguity.  
+* TS_Class tries to solve it by coding property names directly within the class definition.  
+* This may facilitate server/client transfers and more generally object communications.  
+* This implementation is in PHP but may be useful for other languages
 ```php
 // Regular OOP (without accessors and mutators)
 class Class1 {
     public $property1;
     public $property2;
 }
-// OOP with TS_Class
+// TS_Class OOP
 class Class1 extends TS_Class {
     public static $property1="property1";
     public static $property2="property2";
