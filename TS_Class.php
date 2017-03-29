@@ -20,7 +20,7 @@ abstract class TS_Class {
     }
 
     /**
-     * @return array
+     * @return string[]
      */
     public function getProperties() {
         return array_keys($this->_properties);
@@ -40,7 +40,7 @@ abstract class TS_Class {
      * @param string $propertyName
      * @param mixed $value
      */
-    public function set($propertyName,$value) {
+    public function set($propertyName, $value) {
         if (array_key_exists($propertyName,$this->_properties)) {
             $this->_properties[$propertyName] = $value;
             $this->_propertiesDefinitions[$propertyName]->isDefined = true;
@@ -81,10 +81,10 @@ abstract class TS_Class {
      * @param array $arr
      * @return bool
      */
-    private static function _isAssociativeArray(array $arr)
+    private static function _isAssociativeArray($array)
     {
-        if (array() === $arr) return false;
-        return array_keys($arr) !== range(0, count($arr) - 1);
+        if (array() === $array) return false;
+        return array_keys($array) !== range(0, count($array) - 1);
     }
 }
 
