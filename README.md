@@ -1,5 +1,5 @@
 ## TS_Class
-PHP Class Definition with defined named properties
+PHP Class Definition with String defined named properties
 ### Problem and solution
 * Regular OOP does not allow to access properties values by name without hard coding the name of the property (even with ArrayAccess interface in PHP).  
 * There seems to be a need of a new class definition allowing to get instance properties values by name without ambiguity.  
