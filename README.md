@@ -29,12 +29,11 @@ $class1=new Class1();
 // Property initialization
 $class1->set(Class1::$property1, 1);
 $class1->get(Class1::$property1);
-//
 // Properties initialization
 $class1->arraySet( array(
   Class1::$property1=>1,
   Class1::$property2=>2
 ));
 ```
-### Limitation  
+### Limitation    
 The syntax requires more things to write compare to regular OOP
