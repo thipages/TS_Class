@@ -27,8 +27,8 @@ class Class1 extends TS_Class {
 //
 $class1=new Class1();
 // Property initialization
-$class1->set(TS_Class1::$property1, 1);
-$class1->get(TS_Class1::$property1);
+$class1->set(Class1::$property1, 1);
+$class1->get(Class1::$property1);
 //
 // Properties initialization
 $class1->arraySet( array(
