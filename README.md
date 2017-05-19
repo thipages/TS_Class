@@ -36,4 +36,7 @@ $class1->arraySet( array(
 ));
 ```
 ### Limitation    
-The syntax requires more things to write compare to regular OOP
+The syntax requires more things to write compare to regular OOP  
+Public static property are reserved to TS_Class  
+
+Note : it may be safer to move from static properties to constants
